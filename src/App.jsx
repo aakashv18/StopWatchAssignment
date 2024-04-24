@@ -1,18 +1,12 @@
-import { useState } from "react";
-import "./App.css";
+import React from "react";
+import StopWatch from "./Components/StopWatch";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <>
-      <div className="card">
-        <button className="" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <StopWatch />
     </>
   );
-}
+};
 
 export default App;
